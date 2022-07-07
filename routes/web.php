@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\AssigningController;
+use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,4 +25,5 @@ Route::get('permission/{permission}', [PermissionController::class, 'createPermi
 
 
 Route::get('assign/{id}/{role}', [AssigningController::class, 'assignUserRole'])->name('assignUserRole');
+Route::get('users', [HomeController::class, 'users'])->name('users');
 

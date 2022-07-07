@@ -24,3 +24,11 @@ class AssigningController extends Controller
         return $all_users_with_all_their_roles;
     }
 }
+
+
+//Tinker command lines
+
+// factory(App\User::class, 50)->create()->each(function ($user) {
+//     $user->assignRole('subscription'); // assuming 'supscription' was a typo
+// });
+
